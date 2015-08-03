@@ -55,12 +55,9 @@
 			</ul>
 		</li>
 
-		<li>
-			<a href="#">Search</a>
-			<ul class="dl-submenu">
-				<li><a href="{{ site.url }}/portforlio/">UI/UX Design</a></li>
-			</ul>
-		</li>
+		{% if site.search %}
+		<li class="dosearch"><span><i class="fa fa-search"></i> Search</span></li>
+		{% endif %}
 
 		{% if site.search %}{% include site-search.html %}{% endif %}
 		{% for link in site.data.navigation %}
