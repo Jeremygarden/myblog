@@ -47,3 +47,16 @@ $(document).ready(function() {
     mainClass: 'mfp-fade'
   });
 });
+
+
+// welcome ** typed.js by http://www.mattboldt.com/ **
+
+$(function(){
+  $(".welcomeText").typed({
+    strings: ["Hello.", "Olá.", "¡Hola!", "Bonjour.", "Ciào."],
+        typeSpeed: 30, // typing speed
+        backDelay: 500, // pause before backspacing
+        loop: true, // loop on or off (true or false)
+        loopCount: false, // number of loops, false = infinite
+      });
+});
