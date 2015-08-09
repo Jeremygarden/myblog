@@ -22,6 +22,19 @@
 <div id = "homecontent" role = "main">
 {{ content }}
 
+<div class="social-icons" style="text-align: center">
+{% if site.owner.twitter %}
+		<a href="http://twitter.com/{{ site.owner.twitter }}" title="{{ site.owner.name}} on Twitter" target="_blank"><i class="fa fa-twitter-square fa-3x"></i></a>
+	{% endif %}
+
+{% if site.owner.linkedin %}
+		<a href="http://linkedin.com/in/{{ site.owner.linkedin }}" title="{{ site.owner.name}} on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
+	{% endif %}
+	
+{% if site.owner.github %}
+		<a href="http://github.com/{{ site.owner.github }}" title="{{ site.owner.name}} on Github" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>
+	{% endif %}
+</div>
 
 
   <footer class = "footer">
