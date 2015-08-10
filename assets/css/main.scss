@@ -2,21 +2,28 @@
 sitemap: false
 ---
 
-
+/*
+ *
+ *  So Simple
+ *
+ *  Designer: Michael Rose
+ *  Twitter: http://twitter.com/mmistakes
+ *
+*/
 
 // Partials
 @import "variables";
+@import "vendor/bourbon/bourbon";
+@import "grid-settings";
+@import "vendor/neat/neat";
 @import "mixins";
 @import "reset";
-@import "vendor/font-awesome/font-awesome";
-@import "vendor/magnific-popup/magnific-popup";
 @import "site";
-@import "typography";
 @import "pygments";
 @import "coderay";
-@import "gist";
-@import "grid";
 @import "elements";
-@import "animations";
-@import "dl-menu";
-@import "page";
+@import "forms";
+@import "layout";
+@import "vendor/font-awesome/font-awesome";
+@import "vendor/magnific-popup/magnific-popup";
+@import "simple-search";
