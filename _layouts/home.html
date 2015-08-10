@@ -6,53 +6,44 @@
 <head>
 {% include head.html %}
 </head>
-<body class = "test-index">
 
-{% include browser-upgrade.html %}
+<body id="page">
+
 {% include navigation.html %}
 
-<div class = "homepage">
-<div class = "unmoved-header">
+<div id="main" role="main">
+  <article class="homeentry">
+    {% if page.image.feature %}
+    <img src="{{ site.url }}/images/{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title }}" style="margin-top:0;">
+    
+    {% if page.image.credit %}<p class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a>
+    {% endif %}
 
-<div class="welcomeText">Hello</div>
-  <span id="typed-cursor">|</span>
-<h1 id = "fittext1" >{{ site.title }}</h1>
-<img src="{{ site.url }}/images/{{ page.image.feature }}">
-</div>
-<div id = "homecontent" role = "main">
-{{ content }}
+    {% endif %}
 
-<div class="social-icons" style="text-align: center">
-{% if site.owner.twitter %}
-		<a href="http://twitter.com/{{ site.owner.twitter }}" title="{{ site.owner.name}} on Twitter" target="_blank"><i class="fa fa-twitter-square fa-3x"></i></a>
-	{% endif %}
+      <header class="entry-header">
+        <h1 class="entry-title">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}</h1>{% endif %}
+      </header>
+    <div class="entry-wrapper">
 
-{% if site.owner.linkedin %}
-		<a href="http://linkedin.com/in/{{ site.owner.linkedin }}" title="{{ site.owner.name}} on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
-	{% endif %}
-	
-{% if site.owner.github %}
-		<a href="http://github.com/{{ site.owner.github }}" title="{{ site.owner.name}} on Github" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>
-	{% endif %}
-</div>
+      <div class="entry-content">
 
+        {{ content }}
+      
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+  </article>
 
-  <footer class = "footer">
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
     {% include footer.html %}
- </footer>
-</div>
-</div>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script>
- jQuery("#fittext1").fitText(1.5, { minFontSize: '32px', maxFontSize: '60px' });
- jQuery(".fittext2").fitText(2, { minFontSize: '26px', maxFontSize: '32px' });
-</script>
-<script type="text/javascript" src= "" ></script>
+  </footer>
+</div><!-- /.footer-wrapper -->
 
 
-{% include scripts.html %}
-
+{% include scripts.html %}          
 
 </body>
 </html>
