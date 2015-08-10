@@ -1,8 +1,31 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="{{ site.url }}/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="{{ site.url }}/assets/js/scripts.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="{{ site.url }}/assets/js/plugins/typed-custom.js"></script>
 {% if site.search %}
+
+<script>
+  // welcome ** typed.js by http://www.mattboldt.com/ **
+
+$(function(){
+  $(".welcomeText").empty();
+  $(".welcomeText").typed({
+    strings: ["Nihao", "Hello.", "Bonjour.", "Ciào."],
+        typeSpeed: 60, // typing speed
+        backDelay: 650, // pause before backspacing
+        loop: true, // loop on or off (true or false)
+        loopCount: false, // number of loops, false = infinite
+      });
+});
+
+function cursorAnimation() {
+    $('.typed-cursor').animate({
+        opacity: 0
+    }, 'fast', 'swing').animate({
+        opacity: 1
+    }, 'fast', 'swing');
+};
+</script>
 <!-- Jekyll Simple Search option -->
 <script>
   $(document).ready(function() {
