@@ -1,73 +1,58 @@
-# Site Configuration
+# Site wide configuration
 
-title:            Jeremy Li
-description:      Describe your website here.
-disqus_shortname: Jeremylee23
-reading_time:     true
-words_per_minute: 200
+title: Jeremy Li
+locale: en_US
+description: A UI/UX geek with built-in empathy, passion and love.
+logo: logo.jpg
+me: me.jpg
 search: true
-
+# url: http://zhued.github.io
 url:
 
-# Site Owner
-owner:
-  name:           Jeremy Li
-  avatar:         avatar.jpg
-  bio:            "An UI/UX guy built-in with Design, Coding, Research, and Love."
-  email:          li.mingxuan623@gmail.com
-  # Social networking  Update and remove as you like.
-  twitter:        
-  facebook:       
-  github: Jeremygarden
-  codePen:
-  Dribbble:
-  Medium:         
-  stackexchange:  
-  linkedin:       
-  instagram:             
-  tumblr:  
 
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+
+gems:
+  - jekyll-sitemap
 
 kramdown:
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: true
-
-  coderay:
-    coderay_line_numbers: nil
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
-
-
-
-# Background image to be tiled on all pages
-background: 
-
-# Analytics and webmaster tools stuff goes here
-google_analytics:   
-google_verify:           
-
-timezone:    America/New_York
-future:      true
-highlighter: pygments
-markdown:    kramdown
-disqus-shortname: Jeremylee23
-gems:
-  - jekyll-sitemap
-sass:
-  sass_dir: _sass
-  style: compressed
-
-
-permalink:   /:categories/:title/
-
-# Amount of post to show on home page
-paginate: 5
-
+  toc_levels: 1..2
+  use_coderay: false
 
 include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+
+
+# Site owner
+owner:
+  name: Jeremy Li
+  avatar: bio-photo.jpg
+  email: li.mingxuan623@gmail.com
+  disqus-shortname: Jeremylee23
+  twitter: Jeremy23_Zen
+  facebook: 
+  github: Jeremygarden
+  stackexchange: 
+  linkedin: Jeremyli23
+  instagram: 
+  flickr:
+  tumblr: 
+  google:
+    plus: 
+    analytics:
+    verify:
+    ad-client:
+    ad-slot: 
+  bing-verify:
+timezone:    America/New_York
+future:      true
