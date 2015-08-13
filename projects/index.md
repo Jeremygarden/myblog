@@ -3,7 +3,7 @@ layout: page
 title: Projects
 excerpt: "An archive of my projects."
 image:
-  feature: squirrel-bokeh-hd-wallpaper.jpg
+  feature: squirrel.jpg
 ---
 
 <div id="projects">
