@@ -84,6 +84,7 @@ h2, h4{
 }
 h1 {
 	@include font-size(36);
+	font-weight:650;
 
 }
 h1, h2 {

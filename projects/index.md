@@ -13,7 +13,7 @@ image:
 			<span class="separator" style="font-size: 20px">|</span>
 			<span style="font-size: 20px">{{ project.tagline }}</span>
 			<div class="meta">
-				<span class="time" style="font-weight: bold">{{ project.time }}</span>
+				<span class="time" style="font-weight: normal">{{ project.time }}</span>
 				<span class="toolstack">| toolstack:</span> {{ project.tools | join: ", " }}
 			</div>
 			<div class="description">{{ project.description | markdownify}}
@@ -22,10 +22,10 @@ image:
 
 			{% if project.url or project.github %}
 				{% if project.url %}
-					<a href="{{ project.url }}" class="btn" target="_blank"><i class="fa fa-link fa-fw"></i>view online</a>
+					<a href="{{ project.url }}" class="btn" target="_blank"><i class="fa fa-link fa-fw"></i>View online</a>
 				{% endif %}
 				{% if project.github %}
-					<a href="https://github.com/{{ project.github.url }}" class="btn" target="_blank"><i class="fa fa-github fa-fw"></i>view on GitHub</a>
+					<a href="https://github.com/{{ project.github.url }}" class="btn" target="_blank"><i class="fa fa-github fa-fw"></i>View on GitHub</a>
 				{% endif %}
 
 			{% endif %}
