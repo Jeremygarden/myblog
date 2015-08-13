@@ -19,10 +19,12 @@ My name is **Jeremy** and I love new, upcoming technology. I'm currently studyin
 
 Below is my email as well as the links to my social sites, feel free to contact me and I will try to get back to you as soon as possible!
 
-<i class="fa fa-envelope-o fa-fw">&nbsp;li.mingxuan623@gmail.com </i>
 
 
-<a markdown="0" href="{{ site.url }}/Resume/Resume.pdf" class="btn" target="_blank"><i class="fa fa-edit fa-fw"></i>Grab My Resume!</a>
+
+<a href="{{ site.url }}/Resume/Resume.pdf" class="btn" target="_blank"><i class="fa fa-edit fa-fw"></i>Grab My Resume!</a>
+
+<a href=""><i class="fa fa-envelope-o fa-fw">&nbsp;li.mingxuan623@gmail.com </i></a>
 
 
 [^1]: Example: *domain.com/category-name/post-title*
