@@ -1,3 +1,4 @@
+@import "http://fonts.googleapis.com/css?family=Josefin+Sans:100,300";
 // TYPOGRAPHY ================================================
 $base-font: 'source-sans-pro', sans-serif;
 $heading-font: $base-font;
@@ -5,15 +6,21 @@ $caption-font: $base-font;
 $code-font: 'source-code-pro', monospace;
 $alt-font: 'volkhov', serif;
 
+
+
 $doc-font-size: 16;
-$doc-line-height: 24;
+$doc-line-height: 30;
 
 $border-radius: 3px;
 
 
+$font_0: proxima-nova;
+$font_1: 'Josefin Sans', sans-serif;
+$font_2: 'Open Sans', sans-serif;
+$font_3: 'PT Serif', serif;
 // set-up the body font-size / line-height
 body {
-  margin-top: 0px + $doc-line-height;
+  margin-top: 2px + $doc-line-height;
   font-size: 0px + $doc-font-size;  
 }
 
@@ -28,6 +35,10 @@ $white              : #fff;
 $black              : #000;
 $accent-color       : $black;
 $link-color         : #222;
+$color_celeste_approx    : #ccc;
+$color_star_dust_approx  : #575757;
+$color_woodsmoke_approx  : #111;
+
 
 $table-border-color           : $border-color;
 $table-border                 : 1px solid $table-border-color;
@@ -44,3 +55,4 @@ $small            : "only screen and (min-width: 37.5em)";
 $medium           : "only screen and (min-width: 48em)";
 $large            : "only screen and (min-width: 62em)";
 $x-large          : "only screen and (min-width: 86.375em)";
+$width            : 30em;

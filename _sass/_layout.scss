@@ -14,6 +14,8 @@ body {
 	text-align: center;
 	@include clearfix;
 	ul {
+
+
 		display: inline-block;
 		width: 100%;
 		vertical-align: top;
@@ -56,8 +58,12 @@ body {
 		}
 	}
 }
+
+
 // Responsive nav toggle stuff
 #site-nav {
+
+
 	display: none;
 	z-index: 5;
 	@include media($medium) {
@@ -105,7 +111,7 @@ body {
 	background: $black;
 	opacity: 0;
 	visibility: hidden;
-	z-index: 10;
+	z-index: 8;
 	&.is-visible {
 		opacity: 1;
 		visibility: visible;
@@ -130,6 +136,7 @@ body {
 		max-width: em(440);
 		padding-right: 20px;
 		padding-left: 20px;
+		z-index: 60;
 		@include media($medium) {
 			max-width: em(728);
 			padding-right: 60px;
@@ -144,6 +151,7 @@ body {
 	img {
 		width: 100px;
 		height: 100px;
+		z-index: 70;
 		@include animation-duration(1.5s);
 	    @include animation-delay(.05s);
 	    border: 4px solid $white;
@@ -188,6 +196,7 @@ body {
 
 #main {
 	@include clearfix;
+	margin-bottom: 35px;
 }
 .entry,
 .hentry {
@@ -479,6 +488,112 @@ span + .entry-title {
 	}
 }
 
+//Section page
+//---------------------------------------------------
+//@extend-elements
+//original selectors
+//.desc-wrapper p>strong, .desc-wrapper p>em>strong
+%extend_1 {
+	display: block;
+	font-size: 64px;
+	line-height: 1em;
+	font-family: $font_1;
+	text-transform: none;
+	letter-spacing: 0;
+	font-style: normal;
+	color: $white;
+}
+
+
+#thumbnail {
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	animation: feature-bg-anim .6s ease-in-out;
+
+	img{
+		width: 100%;
+		height: 120%;
+		@include animation-duration(1.5s);
+	    @include animation-delay(.05s);
+		@media(max-width: 548px) {
+			width: 700px;
+			height: 480px;
+		}
+		@include media($large) {
+			width: 200%;
+		}
+	
+
+	}
+
+
+}
+.desc-wrapper {
+
+    -webkit-font-smoothing: antialiased;  //avioding fonts vary when scroll
+	animation: feature-text-anim .75s ease-in-out;
+	z-index: 50;
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 20px auto;
+	padding: 32px;
+	text-align: center;
+	text-rendering: optimizeLegibility;
+
+	p {
+		font-family: $font_1;
+		line-height: 1.5em;
+		font-size: 36px;
+		letter-spacing: 4px;
+		font-style: normal;
+		color: $color_celeste_approx;
+		margin: 40px auto;
+
+		a {
+			color: $color_celeste_approx;
+			border-bottom: 1px solid $color_celeste_approx;
+		}
+		&:last-child>a {
+			//Instead of the line below you could use @include box-sizing($bs)
+			box-sizing: border-box;
+			font-family: $font_0, $font_1;
+			font-weight: 700;
+			letter-spacing: 1px;
+			font-size: 16px;
+			text-transform: uppercase;
+			font-style: normal;
+			text-decoration: none;
+			padding: 1em 1.75em;
+			background-color: $color_star_dust_approx;
+			display: inline-block;
+			line-height: 1em;
+			margin: 10px 0;
+			color: $color_woodsmoke_approx;
+			border: none;
+			transition: background-color .1s 0s ease-in-out, color .1s 0s ease-in-out;
+		}
+	}
+	p>strong {
+		@extend %extend_1;
+
+	}
+	p>em>strong {
+		@extend %extend_1;
+		
+	}
+}
+.banner-thumbnail-wrapper {
+	position: relative;
+	overflow: hidden;
+	min-height: 560px;
+	margin: 20px 0 -10px 0;
+	width: 100%;
+}
 
 // Browser Upgrade
 // --------------------------------------------------
@@ -532,3 +647,28 @@ span + .entry-title {
 
 }
 
+// images grid
+//--------------------------------------------------- 
+
+
+#work{
+
+     background: url(/images/foggy.jpg) no-repeat center center fixed;
+     background-color: rgba(255, 255, 255, 0.1);
+     @media (min-width: 30em) {
+
+
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+        margin-bottom: -20px;
+        margin-top: 45px;
+    }
+	@media(max-width: 548px) {
+	height: 520px;
+    }
+}
+
+	
