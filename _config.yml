@@ -8,9 +8,6 @@ me: me.jpg
 search: true
 
 
-baseurl: / 
-
-
 # Jekyll configuration
 
 permalink:   /:categories/:title/
