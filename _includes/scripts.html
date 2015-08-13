@@ -3,6 +3,7 @@
 <script src="{{ site.url }}/assets/js/scripts.min.js"></script>
 <script src="{{ site.url }}/assets/js/plugins/typed-custom.js"></script>
 
+
 {% if site.search %}
 
 <script>
@@ -14,8 +15,10 @@ $(document).ready(function(){
 
     if( $(this).scrollTop() > 1000 ) {
         $("#toTop").fadeIn("slow");
+        $("body").addClass("darken");
     }else{
         $("#toTop").fadeOut("slow");
+        $("body").removeClass("darken");
     }
 });
 
@@ -51,8 +54,8 @@ $('a[href^="#"]').on('click', function(event) {
 $(function(){
   $(".welcomeText").empty();
   $(".welcomeText").typed({
-    strings: ["Nihao", "Hello.", "Bonjour.", "Ciào."],
-        typeSpeed: 60, // typing speed
+    strings: ["Hello,", "你好,", "Bonjour,", "¡Hola!", "Ciào,"],
+        typeSpeed: 50, // typing speed
         backDelay: 650, // pause before backspacing
         loop: true, // loop on or off (true or false)
         loopCount: false, // number of loops, false = infinite
@@ -103,6 +106,14 @@ function cursorAnimation() {
         bs.canvas.removeClass('is-visible');
     });
   })( jQuery, window );
+
+
+  (function(c){
+    c(window).scroll(function(){
+      var d=2500;
+      var f= c(window).scrollTop();
+      var e= c("#work");
+      if(f>d){e.addClass("darken")}else{e.removeClass("darken")}})})( jQuery );
 </script>
 {% endif %}
 {% if site.owner.google.analytics %}
