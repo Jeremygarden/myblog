@@ -518,19 +518,20 @@ table {
 #toTop{
   position: fixed;
   bottom: 56px;
-  right: 60px;
+  right: 56px;
   height: 48px;
-  width: 48px;
+  width: 50px;
   background: none;
   outline: 0;
   border: 0;
+  padding: 1px 3px 1px 4px;
   box-shadow: none;
   z-index: 100;
 
 }
 #toDown{
   text-align: center;
-  margin-top: 200px;
+  margin-top: 125px;
 }
 .blood{
   &:hover { 
