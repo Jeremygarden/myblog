@@ -1,0 +1,44 @@
+- name: Medical Mal-Prctice Platform
+  time: Mar 2015 - May 2015
+  url: 
+  tagline: Medical Error Reporting System
+  tools: Java / Swing GUI
+  description: | 
+    Implemented a fully-functionality for healthcare ecosystem by using Java. 
+  github:
+    url: jeremygarden/
+    branch: master
+
+- name: Angular App
+  time: Feb 2015 +
+  url: 
+  tagline: SPA for a side project
+  tools: Java
+  description: | 
+     NPR Radio
+  github:
+    url: jeremygarden/
+    branch: master
+
+- name: iTrack NYC Train
+  time: Feb 2015 +
+  url: 
+  tagline: Crawling real-time fro NY MTA API and update the traffic info.
+  tools: Python, JS, AngularJS.
+  description: | 
+    **Currently in progress..** 
+  github:
+    url: jeremygarden/
+    branch: master
+
+
+- name: jeremylee.xyz
+  time: Dec 2014 - Jan 2015+
+  url: https://zhued.github.io/
+  tagline: personal online portfolio/blog Hub  
+  tools: HTML/CSS, JS, Bootstrap, SASS, jQuery, Jekyll, Markdown
+  description: Check this out.
+  github:
+    url: jeremygarden/myBlog
+    branch: master
+
