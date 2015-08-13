@@ -6,17 +6,26 @@
 <head>
 <meta charset="utf-8">
 <title>Jeremy Li</title>
-<meta name="description" content="Describe this nonsense.">
-<meta name="keywords" content="Jekyll, responsive, blog, modern">
 
 
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Jeremy Li">
+
+<meta name="twitter:site" content="@Jeremy23_Zen">
+<meta name="twitter:creator" content="@Jeremy23_Zen">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="/images/logo.jpg">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Jeremy Li">
-<meta property="og:description" content="Describe this nonsense.">
-<meta property="og:url" content="/index.html">
+
+<meta property="og:url" content="/">
 <meta property="og:site_name" content="Jeremy Li">
 
 
@@ -26,6 +35,8 @@
 <link rel="canonical" href="/">
 <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Jeremy Li Feed">
 
+
+
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -33,13 +44,21 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/bootstrap.css">
 <!-- Webfonts -->
-<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+<script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
 
 <meta http-equiv="cleartype" content="on">
 
-<!-- Load Modernizr -->
-<script src="/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 <!-- Icons -->
 <!-- 16x16 -->
@@ -49,67 +68,48 @@
 <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
 <link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
 <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png">
-<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png">
-<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
-
 
 
 </head>
-<body class = "test-index">
+
+<body id="page">
+
+
+<div id="main" role="main">
+
+<section>
+  <div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop nav">
+	    <ul>
+      
+		    
+		        
+		    
+		    <li><a href="/about/" >About</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/projects/" >Projects</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/blog/" >Blog</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/resume/Resume.pdf" >Resume</a></li>
+		  
+        <li class="dosearch"><span><i class="fa fa-search"></i> Search</span></li>
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
 
 <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
 
-<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
-	<button class="dl-trigger">Open Menu</button>
-	<ul class="dl-menu">
-		<li><a href="/">Home</a></li>
-		<li>
-			<a href="#">About</a>
-			<ul class="dl-submenu">
-				<li>
-					<img src="/images/avatar.jpg" alt="Jeremy Li photo" class="author-photo">
-					<h4>Jeremy Li</h4>
-					<p>An UI/UX guy built-in with Design, Coding, Research, and Love.</p>
-				</li>
-				<li><a href="/about/"><span class="btn btn-inverse">Learn More</span></a></li>
-				<li>
-					<a href="mailto:li.mingxuan623@gmail.com"><i class="fa fa-fw fa-envelope"></i> Email</a>
-				</li>
-				
-				
-				
-				
-				<li>
-					<a href="http://github.com/Jeremygarden"><i class="fa fa-fw fa-github"></i> GitHub</a>
-				</li>
-				
-				
-				
-			</ul><!-- /.dl-submenu -->
-		</li>
-		<li>
-			<a href="#">Posts</a>
-			<ul class="dl-submenu">
-				<li><a href="/posts/">All Posts</a></li>
-				<li><a href="/tags/">All Tags</a></li>
-			</ul>
-		</li>
-		<li>
-			<a href="#">Projects</a>
-			<ul class="dl-submenu">
-				<li><a href="/portforlio/">UX Work</a></li>
-				<li><a href="/dev/">Developement</a></li>
-			</ul>
-		</li>
-
-		
-		<li class="dosearch"><span><i class="fa fa-search"></i> Search</span></li>
-		
-
-		<div class="search-wrapper">
+<div class="search-wrapper">
   <div class="search-form">
     <input type="text" class="search-field" placeholder="Search...">
     <button class="close-btn"><i class="fa fa-times-circle fa-2x"></i></button>
@@ -117,64 +117,360 @@
   </div><!-- /.search-form -->
 </div><!-- ./search-wrapper -->
 
-		
-	</ul><!-- /.dl-menu -->
-</nav><!-- /.dl-menuwrapper -->
+<header class="masthead">
+	<div class="wrap">
+        
+    		<a href="/" class="site-logo" rel="home" title="Jeremy Li"><img src="/images/logo.jpg" width="200" height="200" alt="Jeremy Li logo" class="animated fadeInDown"></a>
+        
+        
+        <p class="site-title" ><span class="welcomeText" ></span><span id="typed-cursor"></span></p>
+        
+        
+        <h1 class="site-title animated fadeIn"><a href="/">Jeremy Li</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">A UI/UX geek with built-in empathy, passion and love.</h2>
+	</div>
+</header><!-- /.masthead -->
 
-<div class = "homepage">
-<div class = "unmoved-header">
+<div class="js-menu-screen menu-screen"></div>
 
-<div class="welcomeText">Hello</div>
-  <span id="typed-cursor">|</span>
-<h1 id = "fittext1" >Jeremy Li</h1>
-<img src="/images/coffee-wallpaper.jpg">
-</div>
-<div id = "homecontent" role = "main">
+  <div id="toDown" class="col-md-12 animated fadeInDown">
+                <a href="#1part"><i class="fa fa-angle-down fa-2x blood "></i></a>
+  </div>
 
-
-<div class="social-icons" style="text-align: center">
-
-
-
-	
-
-		<a href="http://github.com/Jeremygarden" title="Jeremy Li on Github" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>
-	
-</div>
-
-
-  <footer class = "footer">
-    /* =====  inspired by Mikowl Footer part!!! remember to resign the css    
-url:https://github.com/mikowl/jekyll-mikowl/tree/master
-*/
+</section>
 
 
 
-<div class="container">
-    <p class="left">&copy; 2015 Jeremy Lee | Built with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="https://mademistakes.com/" target="_blank">HPSTR Theme</a></p>
-    <div class="smedia right">
-      <a href="mailto:li.mingxuan623(at)gmail(dot)com" data-icon="&#xe010;"><span class="visuallyhidden">Email</span></a>
+<section>
+
+    <div class="banner-thumbnail-wrapper" data-content-field="main-image">
+      <div class="color-overlay"></div>
+      <figure id="thumbnail" class="loading content-fill" >
+        <img id="1part" src="/images/coffee.jpg" alt="" style="background-repeat: repeat; background-size: 100%; background-color: rgba(255,255,255,0.2);">
+      </figure>
+      <div class="desc-wrapper">
+        <p><strong>My Recent Work</strong></p>
+        <p>UX&nbsp;is an integrated process of design &amp; research</p>
+      </div>
     </div>
-</div>
- </footer>
-</div>
-</div>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script>
- jQuery("#fittext1").fitText(1.5, { minFontSize: '32px', maxFontSize: '60px' });
- jQuery(".fittext2").fitText(2, { minFontSize: '26px', maxFontSize: '32px' });
-</script>
-<script type="text/javascript" src= "" ></script>
+</section>
+
+<section>
+  <div class="container">
+  <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Workflow & Experiences</h2>
+                    
+                      <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                           <hr>
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                  <img src="/images/paper.png" alt="">
+                                </span>
+                                <p class= "title">
+                                   Research & Paper Sketching
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                          <hr>
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                  <img src="/images/wireframe.png" alt="">
+                                
+                                </span>
+                                <p class="title">
+                                    Wireframe & Prototyping
+                                </p>
+                                
+                               
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                           <hr>
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                 <img src="/images/design.png" alt="">
+                            </span>
+                                <p class="title">
+                                    Interaction Design
+                                </p>
+                                
+                               
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                           <hr>
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                 <img src="/images/usertest.png" alt="">
+                            </span>
+                                <p class="title">
+                                   Usability Test
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+          <!-- /.container -->
+</section>
+
+<section >
+    <div class="container">
+      <div class="row">
+                   <div class="col-xs-6 col-sm-6 col-md-4">
+                            <div class="photo-box">
+                                <div class="image-wrap">
+                                    <a href="wex.html">
+                                    <img src="http://placehold.it/600x300.jpg" onmouseover="this.src='http://placehold.it/600x300.jpg'" onmouseout="this.src='http://placehold.it/600x300.jpg'" ></a>
+                                </div>
+
+                                <div class="project-description">
+                                    Google
+                                    <div class="project-type">
+                                        UI wf
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-6 col-md-4">
+                            <div class="photo-box">
+                                <div class="image-wrap">
+                                    <a href="wks.html">
+                                    <img src="http://placehold.it/600x300.jpg" onmouseover="this.src='http://placehold.it/600x300.jpg'" onmouseout="this.src='http://placehold.it/600x300.jpg'" ></a>
+                                </div>
+
+                                <div class="project-description">
+                                    HP
+                                    <div class="project-type">
+                                        Web UX
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-6 col-md-4">
+                            <div class="photo-box">
+                                <div class="image-wrap">
+                                    <a href="wks.html">
+                                    <img src="http://placehold.it/600x300.jpg" onmouseover="this.src='http://placehold.it/600x300.jpg'" onmouseout="this.src='http://placehold.it/600x300.jpg'" ></a>
+                                </div>
+
+                                <div class="project-description">
+                                    IBM Watson Knowledge Studio
+                                    <div class="project-type">
+                                        Visual Design
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-6 col-md-4">
+                            <div class="photo-box">
+                                <div class="image-wrap">
+                                    <a href="panabee.html">
+                                    <img src="http://placehold.it/600x300.jpg" onmouseover="this.src='http://placehold.it/600x300.jpg'" onmouseout="this.src='http://placehold.it/600x300.jpg'" ></a>
+
+                                </div>
+
+                                 <div class="project-description">
+                                    Panabee
+                                    <div class="project-type">
+                                        iOS Game Graphic Design
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+       </div>
+     </div>      
+</section>
 
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<section id="work" >
+   <div class="container">
+                <hr noshade>
+                <div class="row text-center">
+                    <div class="col-xs-4 col-sm-4 col-md-4">
+                        <p><strong>UX  & UI Design</strong></p>
+                        <p>Sketch 3</p>
+                        <p>Balsamiq Mockups</p>
+                        <p>Axure</p>
+                        <p>BagelHint(A/B Testing)</p>
+                        <p>Adobe Suite</p>
+
+                    </div>
+
+
+                    <div class="col-xs-4 col-sm-4 col-md-4">
+                        <p><strong>Coding & Dev</strong> </p>
+                              <p>HTML / CSS(Sass/Less) / Bootstrap</p>
+                              <p>Javascript / AngularJS / D3.js</p>
+                              <p>Python(pandas/scikit-learn) / Java</p>
+                              <p>Machine Learning</p>
+                              <p>Database / OO Programming</p>
+                              
+                    </div>
+
+                    <div class="col-xs-4 col-sm-4 col-md-4">
+                        <p><strong>Misc & Random</strong> </p>
+                              <p>New Techie Products</p>
+                              <p>Kindle Book Addict</p>
+                              <p>Social Psychology</p>
+                              <p>Billiards(8-Balls)</p>
+                              <p>Ukulele Newbie</p>
+                    </div>
+
+
+
+
+                </div>
+
+
+              
+            </div>
+</section>
+
+
+
+
+
+  <article class="homeentry">
+    
+
+      <header class="entry-header">
+        <h1 class="entry-title"></h1>
+      </header>
+    <div class="entry-wrapper">
+
+      <div class="entry-content">
+
+        
+      
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+  </article>
+
+</div><!-- /#main -->
+<!-- <a href=""><i id="toTop" class="fa fa-angle-double-up fa-4x"></i></a> -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+
+
+<div class="social-icons animated fadeIn" style="text-align: center">
+
+  <a href="http://twitter.com/Jeremy23_Zen" title="Jeremy Li on Twitter" target="_blank"><i class="fa fa-twitter-square fa-3x"></i></a>
+
+
+
+  <a href="http://linkedin.com/in/Jeremyli23" title="Jeremy Li on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
+
+
+
+  <a href="http://github.com/Jeremygarden" title="Jeremy Li on Github" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>
+
+
+
+
+</div>
+<button id="toTop" style="display: block;"> <i class="fa fa-angle-double-up fa-5x"></i> </button>
+
+<span>&copy; 2015 .<i class="fa fa-heartbeat blood"></i>&nbsp;Jeremy Li. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a>.</span>
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+
+
 <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="/assets/js/scripts.min.js"></script>
+<script src="/assets/js/plugins/typed-custom.js"></script>
 
 
 
 
+<script>
+
+$(document).ready(function(){
+
+  $("#toTop").hide();
+  $(window).scroll(function(){
+
+    if( $(this).scrollTop() > 1000 ) {
+        $("#toTop").fadeIn("slow");
+        $("body").addClass("darken");
+    }else{
+        $("#toTop").fadeOut("slow");
+        $("body").removeClass("darken");
+    }
+});
+
+$("#toTop").click(function(event){
+        
+        $('body').animate({scrollTop : 0 } , 600);
+        return false;
+    });
+
+
+});
+
+
+
+
+//smoothScroll
+
+$('a[href^="#"]').on('click', function(event) {
+
+    var target = $( $(this).attr('href') );
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+
+});
+
+//  ** typed.js Thanks matt! **
+
+$(function(){
+  $(".welcomeText").empty();
+  $(".welcomeText").typed({
+    strings: ["Hello,", "你好,", "Bonjour,", "¡Hola!", "Ciào,"],
+        typeSpeed: 50, // typing speed
+        backDelay: 650, // pause before backspacing
+        loop: true, // loop on or off (true or false)
+        loopCount: false, // number of loops, false = infinite
+      });
+});
+
+function cursorAnimation() {
+    $('.typed-cursor').animate({
+        opacity: 0
+    }, 'fast', 'swing').animate({
+        opacity: 1
+    }, 'fast', 'swing');
+};
+</script>
 <!-- Jekyll Simple Search option -->
 <script>
   $(document).ready(function() {
@@ -186,7 +482,8 @@ url:https://github.com/mikowl/jekyll-mikowl/tree/master
           noResults: '<p>Nothing found.</p>'
         });
   });
-  (function($, window, undefined ) {
+
+  (function( $, window, undefined ) {
     
      var bs = {
           close: $(".close-btn"),
@@ -210,11 +507,62 @@ url:https://github.com/mikowl/jekyll-mikowl/tree/master
         bs.canvas.removeClass('is-visible');
     });
   })( jQuery, window );
+
+
+  (function(c){
+    c(window).scroll(function(){
+      var d=2500;
+      var f= c(window).scrollTop();
+      var e= c("#work");
+      if(f>d){e.addClass("darken")}else{e.removeClass("darken")}})})( jQuery );
 </script>
 
 
 
+<!-- nav scroll snippet -->
+<script>
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('nav').outerHeight();
 
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('nav').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('nav').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+</script>
+
+
+
+          
 
 </body>
 </html>
