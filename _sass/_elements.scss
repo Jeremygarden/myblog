@@ -76,10 +76,11 @@ table {
 // Buttons
 // --------------------------------------------------
 .btn {
+  font-family: $font_1;
   display: inline-block;
   margin-bottom: 20px;
   padding: 8px 20px;
-  @include font-size(14);
+  @include font-size(18);
   background-color: $white;
   color: $black;
   border: 2px solid $black !important;
@@ -503,7 +504,7 @@ table {
 
 
 .welcomeText, #typed-cursor{
-  font-family: $heading-font;
+  font-family: $font_1;
   @include font-size(36);
   display: inline-block;
   margin: 20px auto;

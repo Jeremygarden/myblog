@@ -663,11 +663,11 @@ span + .entry-title {
         -o-background-size: cover;
         background-size: cover;
 
-        margin-bottom: -20px;
+        margin-bottom: -30px;
         margin-top: 45px;
     }
-	@media(max-width: 548px) {
-	height: 520px;
+	@media(max-width: 750px) {
+	height: 700px;
     }
 }
 

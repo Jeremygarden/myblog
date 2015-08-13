@@ -24,7 +24,7 @@ Below is my email as well as the links to my social sites, feel free to contact 
 
 <a href="{{ site.url }}/Resume/Resume.pdf" class="btn" target="_blank"><i class="fa fa-edit fa-fw"></i>Grab My Resume!</a>
 
-<a href=""><i class="fa fa-envelope-o fa-fw">&nbsp;li.mingxuan623@gmail.com </i></a>
+<p><i class="fa fa-envelope-o fa-fw"></i>&nbsp;<a href="javascript:void(0)">li.mingxuan623@gmail.com</a></p>
 
 
 [^1]: Example: *domain.com/category-name/post-title*
