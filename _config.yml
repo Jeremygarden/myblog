@@ -7,8 +7,8 @@ logo: logo.jpg
 me: me.jpg
 search: true
 
-# url: http://zhued.github.io
-url:
+
+baseurl: / 
 
 
 # Jekyll configuration
